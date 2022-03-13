@@ -87,7 +87,7 @@ button:hover {
 }
 
 .content {
-  padding: 2.5rem;
+  padding: 3.5rem;
 }
 /* .sign-out-link {
   color: lightseagreen;
@@ -96,12 +96,44 @@ button:hover {
   text-decoration: none;
 } */
 
+.avatar {
+  width: 150px;
+}
+
 .section {
   margin: 25px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sectionInside {
+  display: block;
+  margin-left: 40px;
+}
+
+.copy {
+  text-indent: 25px;
+  line-height: 2;
+}
+
+.years {
+  margin-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 10px;
 }
 
 .h1 {
   padding-bottom: 5px;
+}
+
+.h3 {
+  padding-top: 14px;
+}
+
+ol.boolet {
+  list-style-type: circle;
+  line-height: 2;
+  padding-left: 10px;
 }
 
 p {
