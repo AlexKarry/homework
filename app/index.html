@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>CV Alexey Karyshkov</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="src/fontawesome-free-6.0.0-web/css/all.css" />
   </head>
 
   <body>
     <header>
-      <a class="logo" href="#"> <h1 class="title">alexkarry</h1> </a>
-      <nav>
+      <a class="logo" aria-label="read more" href="#">
+        <h1 class="title">alexkarry</h1>
+      </a>
+      <nav id="menu">
         <ul class="nav-links">
-          <li><a class="active" href="recipes.html">Recipes</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="delivery.html">Delivery</a></li>
+          <li><a class="active" href="#about">about</a></li>
+          <li><a href="#experience">work experience</a></li>
+          <li><a href="#skills">technical skills</a></li>
         </ul>
       </nav>
-      <a class="cta" href="#"
-        ><button href="#" class="sign-out-link">Sign Out</button></a
+      <a class="cta" aria-label="read more" href="#"
+        ><button href="#" class="sign-out-link">Contact</button></a
       >
     </header>
-
-    <script src="src/index.js"></script>
+    <div class="content"></div>
+    <script src="js/data-object.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

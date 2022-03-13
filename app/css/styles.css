@@ -19,12 +19,17 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 5%;
 }
 
 .logo {
   cursor: pointer;
   margin-right: auto;
+
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 a.logo {
@@ -81,6 +86,9 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
+.content {
+  padding: 2.5rem;
+}
 /* .sign-out-link {
   color: lightseagreen;
   font-size: 0.8rem;
@@ -88,21 +96,33 @@ button:hover {
   text-decoration: none;
 } */
 
-@media (max-width: 600px) {
+.section {
+  margin: 25px 0px;
+}
+
+.h1 {
+  padding-bottom: 5px;
+}
+
+p {
+  padding: 5px 0px;
+}
+
+@media screen and (max-width: 900px) {
   header {
-    background: lightseagreen;
+    background: gba(0, 136, 169, 1);
   }
   .logo {
     order: 0;
   }
   nav {
     /* display: flex; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
-  .sign-out-link {
+  /* .sign-out-link {
     order: 1;
-  }
-  nav ul {
+  } */
+  /* nav ul {
     order: 2;
     flex: 100%;
     background: blueviolet;
@@ -110,8 +130,11 @@ button:hover {
     border-radius: 5px;
     margin: 0px 15px 15px 15px;
     justify-content: center;
-  }
-  .title {
+  } */
+  /* .title {
     display: none;
-  }
+  } */
+  /* .nav-links li {
+    display: block;
+  } */
 }
