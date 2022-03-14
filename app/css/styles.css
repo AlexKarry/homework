@@ -10,7 +10,7 @@ html {
   --dark-gray: #333333;
   --light-gray: #e4e1d1;
   --light-green: #f5faef;
-  --orange: #f90;
+  --orange: #0fa3b1;
   --light-orange: #ebbd4e;
   --red: #f00;
   --max-width: 840px;
@@ -90,7 +90,7 @@ a.logo {
   margin-right: auto;
 }
 
-button {
+.sign-out-link {
   margin-left: 25px;
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
@@ -101,19 +101,13 @@ button {
   color: white;
 }
 
-button:hover {
+.sign-out-link:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
 .content {
-  padding: 3.5rem;
+  padding: 3.5rem 12rem 0rem 12rem;
 }
-/* .sign-out-link {
-  color: lightseagreen;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  text-decoration: none;
-} */
 
 .avatar {
   width: 150px;
@@ -125,9 +119,13 @@ button:hover {
   justify-content: flex-start;
 }
 
+.sectionContact {
+  margin-left: 35px;
+}
+
 .sectionInside {
   display: block;
-  margin-left: 40px;
+  margin-left: auto;
 }
 
 .copy {
@@ -159,6 +157,17 @@ p {
   padding: 5px 0px;
 }
 
+.skills {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.skills-icons {
+  width: 80px;
+  padding: 20px 0px 20px 0px;
+}
+
 @media screen and (max-width: 900px) {
   header {
     background: gba(0, 136, 169, 1);
@@ -166,28 +175,6 @@ p {
   .logo {
     order: 0;
   }
-  nav {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-  }
-  /* .sign-out-link {
-    order: 1;
-  } */
-  /* nav ul {
-    order: 2;
-    flex: 100%;
-    background: blueviolet;
-    padding: 15px 0px;
-    border-radius: 5px;
-    margin: 0px 15px 15px 15px;
-    justify-content: center;
-  } */
-  /* .title {
-    display: none;
-  } */
-  /* .nav-links li {
-    display: block;
-  } */
 }
 
 .modal {
@@ -214,8 +201,8 @@ p {
   position: absolute;
   top: -10px;
   right: -10px;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   background: #fff;
   color: var(--orange);
   border: 4px solid var(--orange);
@@ -223,6 +210,7 @@ p {
   text-align: center;
   line-height: 1.5rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .modal-outer {
@@ -262,19 +250,25 @@ textarea {
 
 input,
 textarea {
-  width: 90%;
+  width: 100%;
   padding: 1em;
   margin-bottom: 1em;
   font: inherit;
 }
 
-/* button {
-  padding: 6px;
-  border: 1px solid #007eb6;
-  background-color: #007eb6;
-  color: #fff;
+.button {
+  padding: 10px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
-} */
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+.button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
 
 input:focus,
 textarea:focus {
