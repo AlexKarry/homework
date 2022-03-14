@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "futura_stdlight";
+  src: url("font/futurastd-light-webfont-webfont.woff2") format("woff2"),
+    url("font/futurastd-light-webfont-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  --basil-green: #88a308;
+  --dark-gray: #333333;
+  --light-gray: #e4e1d1;
+  --light-green: #f5faef;
+  --orange: #f90;
+  --light-orange: #ebbd4e;
+  --red: #f00;
+  --max-width: 840px;
+  --breakpoint: 640px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400);
 * {
   box-sizing: border-box;
@@ -169,4 +188,110 @@ p {
   /* .nav-links li {
     display: block;
   } */
+}
+
+.modal {
+  max-width: 600px;
+  min-width: 400px;
+  padding: 2rem;
+  border-radius: 5px;
+  min-height: 200px;
+  border: 2px solid var(--orange);
+  background: white;
+  transform: translateY(200%);
+  transition: transform 1s;
+}
+
+.modal-outer.open .modal {
+  transform: translateY(0);
+}
+
+.open {
+  display: block;
+}
+
+.closer {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  color: var(--orange);
+  border: 4px solid var(--orange);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-outer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  /* Hide this until we need it */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+form {
+  padding: 2em 0;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 1em;
+  font: inherit;
+}
+
+/* button {
+  padding: 6px;
+  border: 1px solid #007eb6;
+  background-color: #007eb6;
+  color: #fff;
+  cursor: pointer;
+} */
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 15px #83d9ff;
+}
+
+input:required,
+textarea:required {
+  background-color: #e9f8ff;
+}
+
+input:valid,
+textarea:valid {
+  background-color: #b3ffb3;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+  background-color: #ffcccc;
 }
