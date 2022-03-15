@@ -175,6 +175,9 @@ p {
   .logo {
     order: 0;
   }
+  .content {
+    padding: 3.5rem 8rem 0rem 8rem;
+  }
 }
 
 .modal {
