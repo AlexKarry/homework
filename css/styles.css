@@ -180,6 +180,44 @@ p {
   }
 }
 
+@media screen and (max-width: 390px) {
+  img.avatar {
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .content {
+    padding: 3.5rem 2rem 0rem 2rem;
+  }
+  .section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    display: none;
+  }
+  .skills {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .skills-icons {
+    margin: 25px;
+    padding: 0;
+  }
+  hr.skills {
+    margin-bottom: 15px;
+  }
+  .modal {
+    max-width: 362px !important;
+    min-width: 200px !important;
+  }
+}
+
 .modal {
   max-width: 600px;
   min-width: 400px;
